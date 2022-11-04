@@ -1,0 +1,16 @@
+.navbar {
+    width: 100%;
+    height: 144px;
+
+    box-sizing: border-box;
+    padding: 24px 160px;
+}
+
+.navbar__header {
+    height: 46px;
+}
+
+.navbar__logo {
+    width: 128px;
+    height: 46px;
+}
