@@ -1,0 +1,140 @@
+.button {
+    display: flex;
+    border-style: none;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--colors_primary);
+    font-weight: var(--font-weight_medium);
+    font-size: var(--font-size_small);
+    line-height: var(--line-height_small);
+}
+
+.button--secondary {
+    background-color: var(--colors_secondary);
+    padding: 9px 24px;
+    gap: 12px;
+}
+
+.button--secondary:hover {
+    color: var(--colors_primary-dark);
+}
+
+.button--secondary:active {
+    background: var(--grays_pale-3);
+    color: var(--colors_primary-dark);
+}
+
+.button--white {
+    background: var(--grays_white);
+    padding: 16px 32px;
+    gap: 8px;
+
+}
+
+.button--white:hover {
+    color: var(--colors_primary-dark);
+}
+
+.button--white:active {
+    color: var(--grays_olive);
+}
+
+.field {
+    /* height: 100%; */
+
+    box-sizing: border-box;
+
+    padding: 16px;
+
+    border: 1px solid var(--grays_pale-2);
+    border-radius: 8px;
+
+}
+
+.field:focus {
+    outline: none;
+    border-color: var(--grays_pale);
+}
+
+.field::placeholder {
+    color: var(--grays_pale);
+}
+
+.link {
+    color: var(--colors_primary);
+    text-decoration: none;
+
+
+    font-weight: var(--font-weight_medium);
+    display: flex;
+    gap: 4px;
+    padding: 4px 0px;
+
+    white-space: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.link:visited {
+    color: var(--colors_primary);
+}
+
+.link:hover {
+    color: var(--colors_primary-hover);
+}
+
+.link:active {
+    color: var(--colors_primary-dark);
+}
+
+.link__body {}
+
+.link__decor {}
+
+.section-header {
+    margin-top: 0;
+    margin-bottom: 32px;
+
+    font-weight: var(--font-weight_small);
+    font-size: 36px;
+    line-height: 46px;
+}
+
+.smaller-section-header {
+    margin: 0;
+    font-weight: var(--font-weight_small);
+    font-size: var(--font-size_medium);
+    line-height: var(--line-height_medium);
+}
+
+.highlight {
+    background: var(--grays_pale-3);
+    border-radius: 16px;
+}
+
+.paragraph {
+    margin: 0;
+}
+
+@media screen and (max-width: 1700px) {}
+
+@media screen and (max-width: 1200px) {
+    .link {
+        white-space: normal;
+    }
+
+    .button--secondary {
+        padding: 18px 48px;
+    }
+
+    .button--white {
+        padding: 32px 64px;
+    }
+
+    .field {
+        padding: 32px;
+
+    }
+}

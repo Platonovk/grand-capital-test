@@ -3,586 +3,697 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width; user-scalable=no" />
+
     <title>О нас</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/mixins.css">
+
+    <link rel="stylesheet" href="css/blocks/about.css">
+    <link rel="stylesheet" href="css/blocks/activities.css">
+    <link rel="stylesheet" href="css/blocks/collaboration.css">
+    <link rel="stylesheet" href="css/blocks/info.css">
+    <link rel="stylesheet" href="css/blocks/mailing.css">
+    <link rel="stylesheet" href="css/blocks/navbar.css">
+    <link rel="stylesheet" href="css/blocks/partners.css">
+    <link rel="stylesheet" href="css/blocks/resources.css">
+    <link rel="stylesheet" href="css/blocks/supporters.css">
+    <link rel="stylesheet" href="css/blocks/team.css">
+    <link rel="stylesheet" href="css/blocks/footer.css">
+
+
 </head>
 
 <body class="body">
-    <div class="navbar">
-        <header class="navbar-header">
-            <img class="navbar-header__logo" src="images/Vector/Logotype.svg">
-            <div class="navbar-header__search-bar">
-                <img class="navbar-header__search-logo" src="images/Icon/24/Search@1x.svg">
-                <input class="navbar-header__search-input" placeholder="Поиск по сайту">
+    <div class="page">
+        <div class="navbar">
+            <header class="navbar-header">
+                <img class="navbar-header__logo" src="images/Img/Logotype.svg">
+                <input class="navbar-header__search-bar field" placeholder="Поиск по сайту">
+                <div class="navbar-header__buttons">
+                    <button class="navbar-header__button  button button--secondary">
+                        <img class="navbar-header__button-icon" src="images/Icon/20/Person@1x-green.svg">
+                        <div class="navbar-header__button-text">
+                            Регистрация и вход
+                        </div>
+                    </button>
+                    <button class="navbar-header__button  button button--secondary">
+                        <img class="navbar-header__button-icon" src="images/Icon/20/Phone@1x-green.svg">
+                        <div class="navbar-header__button-text">
+                            Заказать звонок
+                        </div>
+                    </button>
+                </div>
+            </header>
+            <div class="navbar-bottom">
+                <nav class="navbar-nav">
+                    <a class="navbar-nav__page-link navbar-nav__page-link--active" href="">
+                        О нас
+                    </a>
+                    <a class="navbar-nav__page-link" href="">
+                        Юридические услуги
+                    </a>
+                    <a class="navbar-nav__page-link" href="">
+                        Вебинары
+                    </a>
+                    <a class="navbar-nav__page-link" href="">
+                        Курсы
+                    </a>
+                    <a class="navbar-nav__page-link" href="">
+                        Статьи
+                    </a>
+                    <a class="navbar-nav__page-link" href="">
+                        Партнёрство
+                    </a>
+                    <a class="navbar-nav__page-link" href="">
+                        Новости
+                    </a>
+                    <a class="navbar-nav__page-link" href="">
+                        СДО
+                    </a>
+                </nav>
+                <div class="navbar-contacts">
+                    <header class="navbar-contacts__contact">
+                        <img class="navbar-contacts__logo" src="images/Icon/20/Mail@1x.svg">
+                        <span class="navbar-contacts__text text--small">
+                            info@grandschool.net
+                        </span>
+                    </header>
+                    <header class="navbar-contacts__contact text--small">
+                        <img class="navbar-contacts__logo" src="images/Icon/20/Phone@1x.svg">
+                        <span class="navbar-contacts__text">
+                            8 800 333-15-43
+                        </span>
+                    </header>
+                </div>
+            </div>
+        </div>
+        <h1 class="page__header">О нас</h1>
+        <div class="page__sections">
+            <div class="about">
+                <span class="about__description">
+                    <p>
+                        Один из ведущих учебных центров России. Работаем с 2006 года, за это время обучили больше 10 000
+                        человек
+                        по 60 образовательным программам.
+                    </p>
+                    <p>
+                        Наши спикеры — профессиональная команда экспертов, специалистов и практиков, общение с которыми
+                        позволит
+                        вам не только получить полезные знания, но и перенять многолетний опыт.
+                    </p>
+                    <p>
+                        Официальный партнёр «Международного учебно-методического центра финансового мониторинга»
+                        (МУМЦФМ).
+                    </p>
+                    <p>
+                        Мы предлагаем пути решения проблем с практической точки зрения, не ограничиваясь теорией и сухим
+                        законодательством.
+                    </p>
+                    <p>
+                        Обучаясь в «Grand School» вы приобретаете реальный опыт, который поможет преуспеть в работе
+                        и бизнесе.
+                    </p>
+                </span>
+                <div class="about-docs">
+                    <div class="about-docs__doc highlight">
+                        <img class="about-docs__image" src="images/Img/Docs/Doc_1.svg">
+                        <a class="about-docs__link link" href="">
+                            Лицензия в полном размере →
+                        </a>
+                    </div>
+                    <div class="about-docs__doc highlight">
+                        <img class="about-docs__image" src="images/Img/Docs/Doc_2.svg">
+                        <a class="about-docs__link link" href="">
+                            Соглашение с МУМЦФМ →
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="activities">
+                <h2 class="activities__header section-header">Направления деятельности</h2>
+                <div class="activities__list">
+                    <div class="activities__column">
+                        <div class="activities__activity highlight">
+                            <span class="activities__text">
+                                Дистанционное обучение
+                            </span>
+                            <button class="activities__button button button--white" href="">
+                                Подробнее
+                            </button>
+                        </div>
+                        <div class="activities__activity highlight">
+                            <span class="activities__text">
+                                Аттестация
+                            </span>
+                            <button class="activities__button button button--white" href="">
+                                Подробнее
+                            </button>
+                        </div>
+                        <div class="activities__activity highlight">
+                            <span class="activities__text">
+                                Вебинары
+                            </span>
+                            <button class="activities__button button button--white" href="">
+                                Подробнее
+                            </button>
+                        </div>
+                    </div>
+                    <div class="activities__column">
+                        <div class="activities__activity highlight">
+                            <span class="activities__text">
+                                Юридическое сопровождение
+                            </span>
+                            <button class="activities__button button button--white" href="">
+                                Подробнее
+                            </button>
+                        </div>
+                        <div class="activities__activity highlight">
+                            <span class="activities__text">
+                                Разработка документации
+                            </span>
+                            <button class="activities__button button button--white" href="">
+                                Подробнее
+                            </button>
+                        </div>
+                        <div class="activities__activity highlight">
+                            <span class="activities__text">
+                                Лицензирование
+                            </span>
+                            <button class="activities__button button button--white" href="">
+                                Подробнее
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="collaboration">
+                <h2 class="collaboration__header section-header">Сотрудничаем любым удобным способом</h2>
+                <div class="collaboration__list">
+                    <div class="collaboration__item">
+                        <img class="collaboration__img" src="images/Img/Collabs/Collab_1.svg">
+                        <a class="collaboration__link link" href="">
+                            <span class="link__body">Онлайн заявка<span class="link__decor">→</span></span>
+                        </a>
+                    </div>
+                    <div class="collaboration__item">
+                        <img class="collaboration__img" src="images/Img/Collabs/Collab_2.svg">
+                        <a class="collaboration__link link" href="">
+                            <span class="link__body">Звонок нам<span class="link__decor">→</span></span>
+                        </a>
+                    </div>
+                    <div class="collaboration__item">
+                        <img class="collaboration__img" src="images/Img/Collabs/Collab_3.svg">
+                        <a class="collaboration__link link" href="">
+                            <span class="link__body">Посещение офиса<span class="link__decor">→</span></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="resources">
+                <h2 class="resources__header section-header">Наши ресурсы</h2>
+                <div class="resources__list">
+                    <div class="resources__column">
+                        <div class="resources__resource highlight">
+                            <span class="resources__label">
+                                <img class="resources__logo" src="images/Icon/48/TG@1x.svg">
+                                Telegram
+                            </span>
+                            <button class="resources__button button button--white" href="">
+                                Открыть
+                            </button>
+                        </div>
+                        <div class="resources__resource highlight">
+                            <span class="resources__label">
+                                <img class="resources__logo" src="images/Icon/48/VK@1x.svg">
+                                Вконтакте
+                            </span>
+                            <button class="resources__button button button--white" href="">
+                                Открыть
+                            </button>
+                        </div>
+                        <div class="resources__resource highlight">
+                            <span class="resources__label">
+                                <img class="resources__logo" src="images/Icon/48/Grand@1x.svg">
+                                GrandClass.net
+                            </span>
+                            <button class="resources__button button button--white" href="">
+                                Открыть
+                            </button>
+                        </div>
+                    </div>
+                    <div class="resources__column">
+                        <div class="resources__resource highlight">
+                            <span class="resources__label">
+                                <img class="resources__logo" src="images/Icon/48/Zen@1x.svg">
+                                Дзен
+                            </span>
+                            <button class="resources__button button button--white" href="">
+                                Открыть
+                            </button>
+                        </div>
+                        <div class="resources__resource highlight">
+                            <span class="resources__label">
+                                <img class="resources__logo" src="images/Icon/48/YT@1x.svg">
+                                Youtube
+                            </span>
+                            <button class="resources__button button button--white" href="">
+                                Открыть
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="team">
+                <h2 class="team__header section-header">Наша команда</h2>
+                <div class="team__members">
+                    <div class="team-member">
+                        <div class="team-member__background highlight"></div>
+                        <div class="team-member__container">
+                            <div class="team-member__card">
+                                <img class="team-member__avatar" src="images/Img/Avatars/Avatar.svg">
+                                <header class="team-member__name">
+                                    <p class="team-member__name-paragraph paragraph">
+                                        Ирина
+                                    </p>
+                                    <p class="team-member__name-paragraph paragraph">
+                                        Тумашова
+                                    </p>
+                                </header>
+                                <span class="team-member__occupation">
+                                    Руководитель отдела консалтинга
+                                </span>
+                            </div>
+                            <div class="member-contacts">
+                                <header class="member-contacts__contact">
+                                    <img class="member-contacts__logo" src="images/Icon/20/Mail@1x.svg">
+                                    <span class="member-contacts__text">
+                                        i.kolesova@grandschool.net
+                                    </span>
+                                </header>
+                                <header class="member-contacts__contact">
+                                    <img class="member-contacts__logo" src="images/Icon/20/Phone@1x.svg">
+                                    <span class="member-contacts__text">
+                                        8 800 333-15-43
+                                        <i class="member-contacts__text--highlight">
+                                            доб. 478
+                                        </i>
+                                    </span>
+                                </header>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="team-member__background highlight"></div>
+                        <div class="team-member__container">
+                            <div class="team-member__card">
+                                <img class="team-member__avatar" src="images/Img/Avatars/Avatar-1.svg">
+                                <header class="team-member__name">
+                                    <p class="team-member__name-paragraph paragraph">
+                                        Владимир
+                                    </p>
+                                    <p class="team-member__name-paragraph paragraph">
+                                        Сущенко
+                                    </p>
+                                </header>
+                                <span class="team-member__occupation">
+                                    Менеджер по работе с клиентами отдела консалтинга
+                                </span>
+                            </div>
+                            <div class="member-contacts">
+                                <header class="member-contacts__contact">
+                                    <img class="member-contacts__logo" src="images/Icon/20/Mail@1x.svg">
+                                    <span class="member-contacts__text">
+                                        v.sushchenko@grandschool.net
+                                    </span>
+                                </header>
+                                <header class="member-contacts__contact">
+                                    <img class="member-contacts__logo" src="images/Icon/20/Phone@1x.svg">
+                                    <span class="member-contacts__text">
+                                        8 800 333-15-43
+                                        <i class="member-contacts__text--highlight">
+                                            доб. 477
+                                        </i>
+                                    </span>
+                                </header>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="team-member__background highlight"></div>
+                        <div class="team-member__container">
+                            <div class="team-member__card">
+                                <img class="team-member__avatar" src="images/Img/Avatars/Avatar-2.svg">
+                                <header class="team-member__name">
+                                    <p class="team-member__name-paragraph paragraph">
+                                        Максим
+                                    </p>
+                                    <p class="team-member__name-paragraph paragraph">
+                                        Юнчис
+                                    </p>
+                                </header>
+                                <span class="team-member__occupation">
+                                    Менеджер проектов отдела консалтинга
+                                </span>
+                            </div>
+                            <div class="member-contacts">
+                                <header class="member-contacts__contact">
+                                    <img class="member-contacts__logo" src="images/Icon/20/Mail@1x.svg">
+                                    <span class="member-contacts__text">
+                                        m.yunchis@grandschool.net
+                                    </span>
+                                </header>
+                                <header class="member-contacts__contact">
+                                    <img class="member-contacts__logo" src="images/Icon/20/Phone@1x.svg">
+                                    <span class="member-contacts__text">
+                                        8 800 333-15-43
+                                        <i class="member-contacts__text--highlight">
+                                            доб. 475
+                                        </i>
+                                    </span>
+                                </header>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="team-member__background highlight"></div>
+                        <div class="team-member__container">
+                            <div class="team-member__card">
+                                <img class="team-member__avatar" src="images/Img/Avatars/Avatar-3.svg">
+                                <header class="team-member__name">
+                                    <p class="team-member__name-paragraph paragraph">
+                                        Татьяна
+                                    </p>
+                                    <p class="team-member__name-paragraph paragraph">
+                                        Долина
+                                    </p>
+                                </header>
+                                <span class="team-member__occupation">
+                                    Ведущий юрист отдела консалтинга
+                                </span>
+                            </div>
+                            <div class="member-contacts">
+                                <header class="member-contacts__contact">
+                                    <img class="member-contacts__logo" src="images/Icon/20/Mail@1x.svg">
+                                    <span class="member-contacts__text">
+                                        t.dolina@grandschool.net
+                                    </span>
+                                </header>
+                                <header class="member-contacts__contact">
+                                    <img class="member-contacts__logo" src="images/Icon/20/Phone@1x.svg">
+                                    <span class="member-contacts__text">
+                                        8 800 333-15-43
+                                        <i class="member-contacts__text--highlight">
+                                            доб. 479
+                                        </i>
+                                    </span>
+                                </header>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="team-member__background highlight"></div>
+                        <div class="team-member__container">
+                            <div class="team-member__card">
+                                <img class="team-member__avatar" src="images/Img/Avatars/Avatar-4.svg">
+                                <header class="team-member__name">
+                                    <p class="team-member__name-paragraph paragraph">
+                                        Олеся
+                                    </p>
+                                    <p class="team-member__name-paragraph paragraph">
+                                        Михальцова
+                                    </p>
+                                </header>
+                                <span class="team-member__occupation">
+                                    Юрист отдела консалтинга
+                                </span>
+                            </div>
+                            <div class="member-contacts">
+                                <header class="member-contacts__contact">
+                                    <img class="member-contacts__logo" src="images/Icon/20/Mail@1x.svg">
+                                    <span class="member-contacts__text">
+                                        o.mikhaltsova@grandschool.net
+                                    </span>
+                                </header>
+                                <header class="member-contacts__contact">
+                                    <img class="member-contacts__logo" src="images/Icon/20/Phone@1x.svg">
+                                    <span class="member-contacts__text">
+                                        8 800 333-15-43
+                                        <i class="member-contacts__text--highlight">
+                                            доб. 476
+                                        </i>
+                                    </span>
+                                </header>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="team-member__background highlight"></div>
+                        <div class="team-member__container">
+                            <div class="team-member__card">
+                                <img class="team-member__avatar" src="images/Img/Avatars/Avatar-5.svg">
+                                <header class="team-member__name">
+                                    <p class="team-member__name-paragraph paragraph">
+                                        Ульяна
+                                    </p>
+                                    <p class="team-member__name-paragraph paragraph">
+                                        Ванеева
+                                    </p>
+                                </header>
+                                <span class="team-member__occupation">
+                                    Директор ЧОУ ДПО «Гранд Скул»
+                                </span>
+                            </div>
+                            <div class="member-contacts">
+                                <header class="member-contacts__contact">
+                                    <img class="member-contacts__logo" src="images/Icon/20/Mail@1x.svg">
+                                    <span class="member-contacts__text">
+                                        ...
+                                    </span>
+                                </header>
+                                <header class="member-contacts__contact">
+                                    <img class="member-contacts__logo" src="images/Icon/20/Phone@1x.svg">
+                                    <span class="member-contacts__text">
+                                        8 800 333-15-43
+                                        <i class="member-contacts__text--highlight">
+                                            доб. 475
+                                        </i>
+                                    </span>
+                                </header>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="partners">
+                <div class="partners__header-bar">
+                    <h2 class="partners__header section-header">
+                        С нами работают
+                    </h2>
+                    <a class="partners__join-link link" href="">
+                        <span class="link__body">Стать партнёром<span class="link__decor">→</span></span>
+                    </a>
+                </div>
+                <div class="partners__list">
+                    <div class="partners__banner">
+                        <img class="partners__logo partners__logo--first" src="images/Img/Partners/Alfa.svg">
+                        <img class="partners__logo" src="images/Img/Partners/Azot-1.svg">
+                        <img class="partners__logo" src="images/Img/Partners/Azot.svg">
+                        <img class="partners__logo" src="images/Img/Partners/Floors.svg">
+                        <img class="partners__logo" src="images/Img/Partners/Gazprom.svg">
+                        <img class="partners__logo" src="images/Img/Partners/Gazprombank.svg">
+                        <img class="partners__logo" src="images/Img/Partners/Guild.svg">
+                        <img class="partners__logo" src="images/Img/Partners/Intraco.svg">
+                        <img class="partners__logo" src="images/Img/Partners/KolRos.svg">
+                        <img class="partners__logo" src="images/Img/Partners/League.svg">
+                        <img class="partners__logo" src="images/Img/Partners/Magnit.svg">
+                        <img class="partners__logo" src="images/Img/Partners/Nornickel-1.svg">
+                        <img class="partners__logo" src="images/Img/Partners/Nornickel.svg">
+                        <img class="partners__logo" src="images/Img/Partners/Ozon.svg">
+                        <img class="partners__logo" src="images/Img/Partners/Pochta.svg">
+                        <img class="partners__logo" src="images/Img/Partners/Polus.svg">
+                        <img class="partners__logo" src="images/Img/Partners/Polymetal.svg">
+                        <img class="partners__logo" src="images/Img/Partners/Sber.svg">
+                        <img class="partners__logo" src="images/Img/Partners/Sunlight.svg">
+                        <img class="partners__logo" src="images/Img/Partners/Tele2.svg">
+                        <img class="partners__logo" src="images/Img/Partners/Ural-1.svg">
+                        <img class="partners__logo" src="images/Img/Partners/Ural.svg">
+                        <img class="partners__logo" src="images/Img/Partners/Yakut.svg">
 
-                </input>
-            </div>
-            <div class="navbar-controls">
-                <button class="navbar-controls__button">
-                    <img class="navbar-controls__icon" src="images/Icon/20/Person@1x-green.svg">
-                    Регистрация и вход
-                </button>
-                <button class="navbar-controls__button">
-                    <img class="navbar-controls__icon" src="images/Icon/20/Phone@1x-green.svg">
-                    Заказать звонок
-                </button>
-            </div>
-        </header>
-        <nav class="navbar-nav">
-            <a class="navbar-nav__page-link" href="">
-                О нас
-            </a>
-            <a class="navbar-nav__page-link" href="">
-                Юридические услуги
-            </a>
-            <a class="navbar-nav__page-link" href="">
-                Вебинары
-            </a>
-            <a class="navbar-nav__page-link" href="">
-                Курсы
-            </a>
-            <a class="navbar-nav__page-link" href="">
-                Статьи
-            </a>
-            <a class="navbar-nav__page-link" href="">
-                Партнёрство
-            </a>
-            <a class="navbar-nav__page-link" href="">
-                Новости
-            </a>
-            <a class="navbar-nav__page-link" href="">
-                СДО
-            </a>
-        </nav>
-        <div class="navbar-contacts">
-            <header class="navbar-contacts__contact">
-                <img class="navbar-contacts__logo" src="images/Icon/20/Mail@1x.svg">
-                <span class="navbar-contacts__text">
-                    info@grandschool.net
-                </span>
-            </header>
-            <header class="navbar-contacts__contact">
-                <img class="navbar-contacts__logo" src="images/Icon/20/Phone@1x.svg">
-                <span class="navbar-contacts__text">
-                    8 800 333-15-43
-                </span>
-            </header>
-        </div>
-    </div>
-    <div class="about">
-        <h1 class="about__header">О нас</h1>
-        <span class="about__description">
-            <p class="about__paragraph">
-                Один из ведущих учебных центров России. Работаем с 2006 года, за это время обучили больше 10 000 человек по 60 образовательным программам.
-            </p>
-            <p class="about__paragraph">
-                Наши спикеры — профессиональная команда экспертов, специалистов и практиков, общение с которыми позволит вам не только получить полезные знания, но и перенять многолетний опыт.
-            </p>
-            <p class="about__paragraph">
-                Официальный партнёр «Международного учебно-методического центра финансового мониторинга» (МУМЦФМ).
-            </p>
-            <p class="about__paragraph">
-                Мы предлагаем пути решения проблем с практической точки зрения, не ограничиваясь теорией и сухим законодательством.
-            </p>
-            <p class="about__paragraph">
-                Обучаясь в «Grand School» вы приобретаете реальный опыт, который поможет преуспеть в работе и бизнесе.
-            </p>
-        </span>
-        <div class="about-docs">
-            <div class="about-docs__doc">
-                <img class="about-docs__image" src="images/Img/ Doc_1.jpg">
-                <a class="about-docs__link" href="">
-                    Лицензия в полном размере →
-                </a>
-            </div>
-            <div class="about-docs__doc">
-                <img class="about-docs__image" src="images/Img/ Doc_2.jpg">
-                <a class="about-docs__link" href="">
-                    Соглашение с МУМЦФМ →
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="activities">
-        <h2 class="activities__header">Направления деятельности</h2>
-        <div class="activities__list">
-            <div class="activities__activity">
-                <span class="activities__text">
-                    Дистанционное обучение
-                </span>
-                <a class="activities__link" href="">
-                    Подробнее
-                </a>
-            </div>
-            <div class="activities__activity">
-                <span class="activities__text">
-                    Аттестация
-                </span>
-                <a class="activities__link" href="">
-                    Подробнее
-                </a>
-            </div>
-            <div class="activities__activity">
-                <span class="activities__text">
-                    Вебинары
-                </span>
-                <a class="activities__link" href="">
-                    Подробнее
-                </a>
-            </div>
-            <div class="activities__activity">
-                <span class="activities__text">
-                    Юридическое сопровождение
-                </span>
-                <a class="activities__link" href="">
-                    Подробнее
-                </a>
-            </div>
-            <div class="activities__activity">
-                <span class="activities__text">
-                    Разработка документации
-                </span>
-                <a class="activities__link" href="">
-                    Подробнее
-                </a>
-            </div>
-            <div class="activities__activity">
-                <span class="activities__text">
-                    Лицензирование
-                </span>
-                <a class="activities__link" href="">
-                    Подробнее
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="collaboration">
-        <h2 class="collaboration__header">Сотрудничаем любым удобным способом</h2>
-        <div class="collaboration__list">
-            <div class="collaboration__item">
-                <img class="collaboration__img" src="images/Vector/OnlineRegistrationForm.svg">
-                <a class="collaboration__link" href="">
-                    Онлайн заявка →
-                </a>
-            </div>
-            <div class="collaboration__item">
-                <img class="collaboration__img" src="images/Img/ Collab_1.jpg">
-                <a class="collaboration__link" href="">
-                    Звонок нам →
-                </a>
-            </div>
-            <div class="collaboration__item">
-                <img class="collaboration__img" src="images/Img/ Collab_2.jpg">
-                <a class="collaboration__link" href="">
-                    Посещение офиса →
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="resources">
-        <h2 class="resources__header">Наши ресурсы</h2>
-        <div class="resources__list">
-            <header class="resources__resource">
-                <img class="resources__logo" src="images/Icon/48/TG@1x.svg">
-                <span class="resources__label">
-                    Telegram
-                </span>
-                <a class="resources__link" href="">
-                    Открыть
-                </a>
-            </header>
-            <header class="resources__resource">
-                <img class="resources__logo" src="images/Icon/48/VK@1x.svg">
-                <span class="resources__label">
-                    Вконтакте
-                </span>
-                <a class="resources__link" href="">
-                    Открыть
-                </a>
-            </header>
-            <header class="resources__resource">
-                <img class="resources__logo" src="images/Icon/48/Grand@1x.svg">
-                <span class="resources__label">
-                    GrandClass.net
-                </span>
-                <a class="resources__link" href="">
-                    Открыть
-                </a>
-            </header>
-            <header class="resources__resource">
-                <img class="resources__logo" src="images/Icon/48/Zen@1x.svg">
-                <span class="resources__label">
-                    Дзен
-                </span>
-                <a class="resources__link" href="">
-                    Открыть
-                </a>
-            </header>
-            <header class="resources__resource">
-                <img class="resources__logo" src="images/Icon/48/YT@1x.svg">
-                <span class="resources__label">
-                    Youtube
-                </span>
-                <a class="resources__link" href="">
-                    Открыть
-                </a>
-            </header>
-        </div>
-    </div>
-    <div class="team">
-        <h2 class="team__header">Наша команда</h2>
-        <div class="team__members">
-            <div class="team-member">
-                <div class="team-member__card">
-                    <img class="team-member__avatar" src="images/Img/Avatar.jpg">
-                    <header class="team-member__name">
-                        <p class="team-member__name-paragraph">
-                            Ирина
-                        </p>
-                        <p class="team-member__name-paragraph">
-                            Тумашова
-                        </p>
-                    </header>
-                    <span class="team-member__occupation">
-                        Руководитель отдела консалтинга
-                    </span>
-                </div>
-                <div class="member-contacts">
-                    <header class="member-contacts__contact">
-                        <img class="member-contacts__logo" src="images/Icon/20/Mail@1x.svg">
-                        <span class="member-contacts__text">
-                            i.kolesova@grandschool.net
-                        </span>
-                    </header>
-                    <header class="member-contacts__contact">
-                        <img class="member-contacts__logo" src="images/Icon/20/Phone@1x.svg">
-                        <span class="member-contacts__text">
-                            8 800 333-15-43 
-                            <i class="member-contacts__text--indent">
-                                доб. 478
-                            </i>
-                        </span>
-                    </header>
+                        <!-- Clones for infinite scroll -->
+                        <img class="partners__logo partners__logo--first" src="images/Img/Partners/Alfa.svg">
+                        <img class="partners__logo" src="images/Img/Partners/Azot-1.svg">
+                        <img class="partners__logo" src="images/Img/Partners/Azot.svg">
+                        <img class="partners__logo" src="images/Img/Partners/Floors.svg">
+                        <img class="partners__logo" src="images/Img/Partners/Gazprom.svg">
+                        <img class="partners__logo" src="images/Img/Partners/Gazprombank.svg">
+                        <img class="partners__logo" src="images/Img/Partners/Guild.svg">
+                        <img class="partners__logo" src="images/Img/Partners/Intraco.svg">
+                        <img class="partners__logo" src="images/Img/Partners/KolRos.svg">
+                        <img class="partners__logo" src="images/Img/Partners/League.svg">
+                        <img class="partners__logo" src="images/Img/Partners/Magnit.svg">
+                        <img class="partners__logo" src="images/Img/Partners/Nornickel-1.svg">
+                        <img class="partners__logo" src="images/Img/Partners/Nornickel.svg">
+                        <img class="partners__logo" src="images/Img/Partners/Ozon.svg">
+                        <img class="partners__logo" src="images/Img/Partners/Pochta.svg">
+                        <img class="partners__logo" src="images/Img/Partners/Polus.svg">
+                        <img class="partners__logo" src="images/Img/Partners/Polymetal.svg">
+                        <img class="partners__logo" src="images/Img/Partners/Sber.svg">
+                        <img class="partners__logo" src="images/Img/Partners/Sunlight.svg">
+                        <img class="partners__logo" src="images/Img/Partners/Tele2.svg">
+                        <img class="partners__logo" src="images/Img/Partners/Ural-1.svg">
+                        <img class="partners__logo" src="images/Img/Partners/Ural.svg">
+                        <img class="partners__logo" src="images/Img/Partners/Yakut.svg">
+                    </div>
                 </div>
             </div>
-            <div class="team-member">
-                <div class="team-member__card">
-                    <img class="team-member__avatar" src="images/Img/Avatar_5.jpg">
-                    <header class="team-member__name">
-                        <p class="team-member__name-paragraph">
-                            Владимир
-                        </p>
-                        <p class="team-member__name-paragraph">
-                            Сущенко
-                        </p>
-                    </header>
-                    <span class="team-member__occupation">
-                        Менеджер по работе с клиентами отдела консалтинга
-                    </span>
+            <div class="page__double-section">
+                <div class="info">
+                    <h2 class="info__header section-header">Сведения об образовательной организации</h2>
+                    <div class="info__list">
+                        <a class="info__link link" href="">
+                            <span class="link__body">Учредительные документы<span class="link__decor">→</span></span>
+                        </a>
+                        <a class="info__link link" href="">
+                            <span class="link__body">Место нахождения, режим, график работы и прочая контактная
+                                информация<span class="link__decor">→</span></span>
+
+                        </a>
+                        <a class="info__link link" href="">
+                            <span class="link__body">Структура<span class="link__decor">→</span></span>
+                        </a>
+                        <a class="info__link link" href="">
+                            <span class="link__body">Устав<span class="link__decor">→</span></span>
+                        </a>
+                        <a class="info__link link" href="">
+                            <span class="link__body">Свидетельство ОГРН<span class="link__decor">→</span></span>
+                        </a>
+                        <a class="info__link link" href="">
+                            <span class="link__body">Свидетельство ИНН<span class="link__decor">→</span></span>
+                        </a>
+                        <a class="info__link link" href="">
+                            <span class="link__body">Учредительные документы<span class="link__decor">→</span></span>
+                        </a>
+                        <a class="info__link link" href="">
+                            <span class="link__body">Порядок приема, отчисления и восстановления обучающихся<span
+                                    class="link__decor">→</span></span>
+                        </a>
+                        <a class="info__link link" href="">
+                            <span class="link__body">Положение об организации образовательного процесса<span
+                                    class="link__decor">→</span></span>
+                        </a>
+                        <a class="info__link link" href="">
+                            <span class="link__body">Учредительные документы<span class="link__decor">→</span></span>
+                        </a>
+                        <a class="info__link link" href="">
+                            <span class="link__body">Положение о контроле за санит.-эпид. Правилами<span
+                                    class="link__decor">→</span></span>
+                        </a>
+                        <a class="info__link link" href="">
+                            <span class="link__body">Учредительные документы<span class="link__decor">→</span></span>
+                        </a>
+                        <a class="info__link link" href="">
+                            <span class="link__body">Учредительные документы<span class="link__decor">→</span></span>
+                        </a>
+                        <a class="info__link link" href="">
+                            <span class="link__body">Учредительные документы<span class="link__decor">→</span></span>
+                        </a>
+                    </div>
                 </div>
-                <div class="member-contacts">
-                    <header class="member-contacts__contact">
-                        <img class="member-contacts__logo" src="images/Icon/20/Mail@1x.svg">
-                        <span class="member-contacts__text">
-                            v.sushchenko@grandschool.net
-                        </span>
-                    </header>
-                    <header class="member-contacts__contact">
-                        <img class="member-contacts__logo" src="images/Icon/20/Phone@1x.svg">
-                        <span class="member-contacts__text">
-                            8 800 333-15-43 
-                            <i class="member-contacts__text--indent">
-                                доб. 477
-                            </i>
-                        </span>
-                    </header>
-                </div>
-            </div>
-            <div class="team-member">
-                <div class="team-member__card">
-                    <img class="team-member__avatar" src="images/Img/Avatar_2.jpg">
-                    <header class="team-member__name">
-                        <p class="team-member__name-paragraph">
-                            Максим
-                        </p>
-                        <p class="team-member__name-paragraph">
-                            Юнчис
-                        </p>
-                    </header>
-                    <span class="team-member__occupation">
-                        Менеджер проектов отдела консалтинга
-                    </span>
-                </div>
-                <div class="member-contacts">
-                    <header class="member-contacts__contact">
-                        <img class="member-contacts__logo" src="images/Icon/20/Mail@1x.svg">
-                        <span class="member-contacts__text">
-                            m.yunchis@grandschool.net
-                        </span>
-                    </header>
-                    <header class="member-contacts__contact">
-                        <img class="member-contacts__logo" src="images/Icon/20/Phone@1x.svg">
-                        <span class="member-contacts__text">
-                            8 800 333-15-43 
-                            <i class="member-contacts__text--indent">
-                                доб. 475
-                            </i>
-                        </span>
-                    </header>
-                </div>
-            </div>
-            <div class="team-member">
-                <div class="team-member__card">
-                    <img class="team-member__avatar" src="images/Img/Avatar_1.jpg">
-                    <header class="team-member__name">
-                        <p class="team-member__name-paragraph">
-                            Татьяна
-                        </p>
-                        <p class="team-member__name-paragraph">
-                            Долина
-                        </p>
-                    </header>
-                    <span class="team-member__occupation">
-                        Ведущий юрист отдела консалтинга
-                    </span>
-                </div>
-                <div class="member-contacts">
-                    <header class="member-contacts__contact">
-                        <img class="member-contacts__logo" src="images/Icon/20/Mail@1x.svg">
-                        <span class="member-contacts__text">
-                            t.dolina@grandschool.net
-                        </span>
-                    </header>
-                    <header class="member-contacts__contact">
-                        <img class="member-contacts__logo" src="images/Icon/20/Phone@1x.svg">
-                        <span class="member-contacts__text">
-                            8 800 333-15-43 
-                            <i class="member-contacts__text--indent">
-                                доб. 479
-                            </i>
-                        </span>
-                    </header>
+                <div class="page__supporters-wrapper">
+                    <div class="supporters">
+                        <h2 class="supporters__header section-header">Работаем при поддержке</h2>
+                        <div class="supporters__list">
+                            <img class="supporters__supporter" src="images/Img/Supporters/RFBank.svg">
+                            <img class="supporters__supporter" src="images/Img/Supporters/Sci.svg">
+                            <img class="supporters__supporter" src="images/Img/Supporters/Rosfin.svg">
+                            <img class="supporters__supporter" src="images/Img/Supporters/MUMCFM.svg">
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="team-member">
-                <div class="team-member__card">
-                    <img class="team-member__avatar" src="images/Img/Avatar_4.jpg">
-                    <header class="team-member__name">
-                        <p class="team-member__name-paragraph">
-                            Олеся
-                        </p>
-                        <p class="team-member__name-paragraph">
-                            Михальцова
-                        </p>
-                    </header>
-                    <span class="team-member__occupation">
-                        Юрист отдела консалтинга
-                    </span>
+            <div class="mailing">
+                <div class="mailing__form">
+                    <h3 class="mailing__header smaller-section-header">Читай нашу рассылку и будь в курсе новостей
+                        и скидок</h3>
+                    <div class="mailing__inputs">
+                        <input class="mailing__input field" placeholder="Имя">
+                        <input class="mailing__input field" placeholder="Электронная почта">
+                    </div>
+                    <button class="mailing__subscribe-button button button--white">
+                        Подписаться
+                    </button>
                 </div>
-                <div class="member-contacts">
-                    <header class="member-contacts__contact">
-                        <img class="member-contacts__logo" src="images/Icon/20/Mail@1x.svg">
-                        <span class="member-contacts__text">
-                            o.mikhaltsova@grandschool.net
+                <div class="mailing__divider"></div>
+                <img class="mailing__messages" src="images/Img/MailingMessages.svg">
+            </div>
+            <div class="footer">
+                <div class="footer__block">
+                    <div class="footer__section footer-contacts">
+                        <h3 class="footer-contacts__header smaller-section-header">Контакты</h3>
+                        <div class="footer-contacts__phone-block">
+                            <header class="footer-contacts__text">
+                                <img class="footer-contacts__logo" src="images/Icon/20/Phone@1x-green.svg">
+                                <span class="footer-contacts__contact-text">
+                                    8 800 333-15-43
+                                </span>
+                            </header>
+                            <span class="footer-contacts__description">
+                                Звонок по России бесплатный
+                            </span>
+                        </div>
+                        <header class="footer-contacts__text">
+                            <img class="footer-contacts__logo" src="images/Icon/20/Mail@1x-green.svg">
+                            <span class="footer-contacts__contact-text">
+                                info@grandschool.net
+                            </span>
+                        </header>
+                    </div>
+                    <div class="footer__section footer-socical">
+                        <input class="footer-socical__link button button--secondary" type="image"
+                            src="images/Icon/48/TG@1x-1.svg">
+                        <input class="footer-socical__link button button--secondary" type="image"
+                            src="images/Icon/48/VK@1x-1.svg">
+                        <input class="footer-socical__link button button--secondary" type="image"
+                            src="images/Icon/48/Zen@1x-1.svg">
+                        <input class="footer-socical__link button button--secondary" type="image"
+                            src="images/Icon/48/YT@1x-1.svg">
+                    </div>
+                </div>
+                <div class="footer__block">
+                    <div class="footer__section footer-address">
+                        <h3 class="footer-address__header smaller-section-header">Центральный офис</h3>
+                        <span class="footer-address__description">
+                            <p class="footer-address__paragraph paragraph">
+                                196084, г. Санкт-Петербург,
+                            </p>
+                            <p class="footer-address__paragraph paragraph">
+                                пр. Московский, д. 97, офис 507
+                            </p>
                         </span>
-                    </header>
-                    <header class="member-contacts__contact">
-                        <img class="member-contacts__logo" src="images/Icon/20/Phone@1x.svg">
-                        <span class="member-contacts__text">
-                            8 800 333-15-43 
-                            <i class="member-contacts__text--indent">
-                                доб. 476
-                            </i>
-                        </span>
-                    </header>
+                        <button class="footer-address__maps-button button button--secondary">
+                            Открыть Яндекс.Карты
+                        </button>
+                    </div>
+                    <div class="footer__section footer-info">
+                        <a class="footer-info__link link" href="">
+                            <span class="link__body">Реквизиты<span class="link__decor">→</span></span>
+                        </a>
+                        <a class="footer-info__link link" href="">
+                            <span class="link__body">Договор оферта<span class="link__decor">→</span></span>
+                        </a>
+                        <a class="footer-info__link link" href="">
+                            <span class="link__body">Пользовательское соглашение<span
+                                    class="link__decor">→</span></span>
+                        </a>
+                        <a class="footer-info__link link" href="">
+                            <span class="link__body">Политика конфиденциальности<span
+                                    class="link__decor">→</span></span>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="team-member">
-                <div class="team-member__card">
-                    <img class="team-member__avatar" src="images/Img/Avatar_3.jpg">
-                    <header class="team-member__name">
-                        <p class="team-member__name-paragraph">
-                            Ульяна
-                        </p>
-                        <p class="team-member__name-paragraph">
-                            Ванеева
-                        </p>
-                    </header>
-                    <span class="team-member__occupation">
-                        Директор ЧОУ ДПО «Гранд Скул»
-                    </span>
-                </div>
-                <div class="member-contacts">
-                    <header class="member-contacts__contact">
-                        <img class="member-contacts__logo" src="images/Icon/20/Mail@1x.svg">
-                        <span class="member-contacts__text">
-                            ...
-                        </span>
-                    </header>
-                    <header class="member-contacts__contact">
-                        <img class="member-contacts__logo" src="images/Icon/20/Phone@1x.svg">
-                        <span class="member-contacts__text">
-                            8 800 333-15-43 
-                            <i class="member-contacts__text--indent">
-                                доб. 475
-                            </i>
-                        </span>
-                    </header>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="partners">
-        <h2 class="partners__header">С нами работают</h2>
-        <a class="partners__join-link" href="">
-            Стать партнёром →
-        </a>
-        <div class="partners__list">
-            <img class="partners__logo" src="images/Vector/Partners/Alfa.svg">
-            <img class="partners__logo" src="images/Vector/Partners/Azot-1.svg">
-            <img class="partners__logo" src="images/Vector/Partners/Azot.svg">
-            <img class="partners__logo" src="images/Vector/Partners/Floors.svg">
-            <img class="partners__logo" src="images/Vector/Partners/Gazprom.svg">
-            <img class="partners__logo" src="images/Vector/Partners/Gazprombank.svg">
-            <img class="partners__logo" src="images/Vector/Partners/Guild.svg">
-            <img class="partners__logo" src="images/Vector/Partners/Intraco.svg">
-            <img class="partners__logo" src="images/Vector/Partners/KolRos.svg">
-            <img class="partners__logo" src="images/Vector/Partners/League.svg">
-            <img class="partners__logo" src="images/Vector/Partners/Magnit.svg">
-            <img class="partners__logo" src="images/Vector/Partners/Nornickel-1.svg">
-            <img class="partners__logo" src="images/Vector/Partners/Nornickel.svg">
-            <img class="partners__logo" src="images/Vector/Partners/Ozon.svg">
-            <img class="partners__logo" src="images/Vector/Partners/Pochta.svg">
-            <img class="partners__logo" src="images/Vector/Partners/Polus.svg">
-            <img class="partners__logo" src="images/Vector/Partners/Polymetal.svg">
-            <img class="partners__logo" src="images/Vector/Partners/Sber.svg">
-            <img class="partners__logo" src="images/Vector/Partners/Sunlight.svg">
-            <img class="partners__logo" src="images/Vector/Partners/Tele2.svg">
-            <img class="partners__logo" src="images/Vector/Partners/Ural-1.svg">
-            <img class="partners__logo" src="images/Vector/Partners/Ural.svg">
-            <img class="partners__logo" src="images/Vector/Partners/Yakut.svg">
-        </div>
-    </div>
-    <div class="info">
-        <h2 class="info__header">Сведения об образовательной организации</h2>
-        <div class="info__list">
-            <a class="info__link" href="">
-                Учредительные документы →
-            </a>
-            <a class="info__link" href="">
-                Место нахождения, режим, график работы и прочая контактная информация →
-            </a>
-            <a class="info__link" href="">
-                Структура →
-            </a>
-            <a class="info__link" href="">
-                Устав →
-            </a>
-            <a class="info__link" href="">
-                Свидетельство ОГРН →
-            </a>
-            <a class="info__link" href="">
-                Свидетельство ИНН →
-            </a>
-            <a class="info__link" href="">
-                Учредительные документы →
-            </a>
-            <a class="info__link" href="">
-                Порядок приема, отчисления и восстановления обучающихся →
-            </a>
-            <a class="info__link" href="">
-                Положение об организации образовательного процесса →
-            </a>
-            <a class="info__link" href="">
-                Учредительные документы →
-            </a>
-            <a class="info__link" href="">
-                Положение о контроле за санит.-эпид. Правилами →
-            </a>
-            <a class="info__link" href="">
-                Учредительные документы →
-            </a>
-            <a class="info__link" href="">
-                Учредительные документы →
-            </a>
-            <a class="info__link" href="">
-                Учредительные документы →
-            </a>
-        </div>
-    </div>
-    <div class="supporters">
-        <h2 class="supporters__header">Работаем при поддержке</h2>
-        <div class="supporters__list">
-            <img class="supporters__supporter" src="images/Vector/RFBank.svg">
-            <img class="supporters__supporter" src="images/Vector/Sci.svg">
-            <img class="supporters__supporter" src="images/Vector/Rosfin.svg">
-            <img class="supporters__supporter" src="images/Vector/MUMCFM.svg">
-        </div>
-    </div>
-    <div class="mailing">
-        <div class="mailing__form">
-            <h4 class="mailing__header">Читай нашу рассылку и будь в курсе новостей и скидок</h4>
-            <input class="mailing__input" placeholder="Имя">
-            <input class="mailing__input" placeholder="Электронная почта">
-            <button class="mailing__subscribe-button">
-                Подписаться
-            </button>
-        </div>
-        <img class="mailing__messages" src="images/Vector/MailingMessages.svg">
-    </div>
-    <div class="footer">
-        <div class="footer-contacts">
-            <h4 class="footer-contacts__header">Контакты</h4>
-            <header class="footer-contacts__phone">
-                <img class="footer-contacts__logo" src="images/Icon/20/Phone@1x-green.svg">
-                <span class="footer-contacts__contact-text">
-                    8 800 333-15-43
-                </span>
-            </header>
-            <span class="footer-contacts__description">
-                Звонок по России бесплатный
-            </span>
-            <header class="footer-contacts__email">
-                <img class="footer-contacts__logo" src="images/Icon/20/Mail@1x-green.svg">
-                <span class="footer-contacts__contact-text">
-                    info@grandschool.net
-                </span>
-            </header>
-        </div>
-        <div class="footer-socical">
-            <input class="footer-socical__link" type="image" src="images/Icon/48/TG@1x-1.svg">
-            <input class="footer-socical__link" type="image" src="images/Icon/48/VK@1x-1.svg">
-            <input class="footer-socical__link" type="image" src="images/Icon/48/Zen@1x-1.svg">
-            <input class="footer-socical__link" type="image" src="images/Icon/48/YT@1x-1.svg">
-        </div>
-        <div class="footer-address">
-            <h4 class="footer-address__header">Центральный офис</h4>
-            <span class="footer-address__description">
-                <p class="footer-address__paragraph">
-                    196084, г. Санкт-Петербург,
-                </p>
-                <p class="footer-address__paragraph">
-                    пр. Московский, д. 97, офис 507
-                </p>
-            </span>
-            <button class="footer-address__maps-button">
-                Открыть Яндекс.Карты
-            </button>
-        </div>
-        <div class="footer-info">
-            <a class="footer-info__link" href="">
-                Реквизиты →
-            </a>
-            <a class="footer-info__link" href="">
-                Договор оферта →
-            </a>
-            <a class="footer-info__link" href="">
-                Пользовательское соглашение →
-            </a>
-            <a class="footer-info__link" href="">
-                Политика конфиденциальности →
-            </a>
         </div>
     </div>
 </body>

@@ -1,0 +1,35 @@
+.collaboration {}
+
+.collaboration__header {}
+
+.collaboration__list {
+    display: flex;
+    gap: 23px;
+}
+
+.collaboration__item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    font-weight: var(--font-weight_medium);
+    
+    
+}
+
+.collaboration__img {}
+
+collaboration__link {}
+
+@media screen and (max-width: 1700px) {
+    .collaboration__list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .collaboration__item {
+        width: 100%;
+    }
+}

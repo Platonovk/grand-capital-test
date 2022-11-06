@@ -1,0 +1,76 @@
+.partners {
+    /* overflow: hidden; */
+}
+
+.partners__header-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.partners__header {
+}
+
+.partners__join-link {
+    
+}
+
+* {
+    /* Calculated sum of logo widths */
+    --width-sum: 4882px;
+
+    /* Gap between logos */
+    --banner-gap: 64px;
+
+    /* Number of logos */
+    --banner-count: 23;
+
+    /* Resulting list width */
+    --banner-width: calc(var(--width-sum) + calc(var(--banner-gap) * var(--banner-count)));
+}
+
+.partners__list {
+    position: relative;
+}
+.partners__list::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.partners::before {
+    left: 0;
+    top: 0;
+}
+
+.partners__banner {
+    animation: scroll 60s linear infinite;
+    display: flex;
+    width: calc(var(--banner-width) * 2);
+
+    display: flex;
+    gap: var(--banner-gap);
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(calc(0px - var(--banner-width) / 2));
+    }
+    100% {
+        transform: translateX(calc(0px - calc(var(--banner-width) * 1.5)));
+    }
+}
+
+
+.partners__logo {
+
+}
+
+
+@media screen and (max-width: 1700px) {
+
+}
+
+@media screen and (max-width: 1200px) {
+
+}

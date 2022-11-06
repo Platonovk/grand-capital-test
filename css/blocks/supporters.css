@@ -1,0 +1,39 @@
+.supporters {
+    display: flex;
+    flex-direction: column;
+}
+
+.supporters__header {
+
+}
+
+.supporters__list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 64px;
+}
+
+.supporters__supporter {
+
+}
+
+@media screen and (max-width: 1700px) {
+    .supporters__list {
+        flex-direction: row;
+    }
+    .supporters__supporter {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .supporters__list {
+        flex-wrap: wrap;
+        /* justify-content: center; */
+    }
+
+    .supporters__supporter {
+        max-width: 40vw;
+    }
+}
