@@ -18,7 +18,7 @@
 
 }
 
-@media screen and (max-width: 1700px) {
+@media only screen and (max-width: 1700px) {
     .supporters__list {
         flex-direction: row;
     }
@@ -27,7 +27,9 @@
     }
 }
 
-@media screen and (max-width: 1200px) {
+
+
+@media only screen and (max-width: 1024px) {
     .supporters__list {
         flex-wrap: wrap;
         /* justify-content: center; */
@@ -36,4 +38,8 @@
     .supporters__supporter {
         max-width: 40vw;
     }
+}
+
+@media only screen and (max-width: 414px) {
+    
 }

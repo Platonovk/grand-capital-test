@@ -26,23 +26,24 @@
 }
 
 .navbar-header__search-bar {
-    flex: 1;
-
     padding-left: 44px;
     background: url('./../../images/Icon/24/Search@1x.svg') no-repeat left;
-    background-size: 24px;
     background-position: 12px;
-    box-sizing: border-box;
+    min-width: 0px;
+    width: 100%;
+    text-overflow:ellipsis;
 }
 
 .navbar-header__buttons {
-    flex-basis: auto;
+    flex: 0;
     display: flex;
     gap: 12px;
 }
 
 .navbar-header__button {
     padding-left: 16px;
+    box-sizing: border-box;
+    white-space: nowrap;
 }
 
 .navbar-header__button-icon {}
@@ -88,8 +89,6 @@
     display: flex;
     align-items: center;
     gap: 8px;
-    
-    
 }
 
 .navbar-contacts__logo {}
@@ -98,28 +97,21 @@
     white-space: nowrap;
 }
 
-@media screen and (max-width: 1700px) {
+@media only screen and (max-width: 1700px) {
     .navbar-nav {
         row-gap: 15px;
     }
-    .navbar-nav__page-link {
+
+    .navbar-contacts {
+        flex-direction: column;
+        row-gap: 15px;
     }
 }
 
-@media screen and (max-width: 1200px) {
-    .navbar-header {
-        height: 89px;
-    }
+@media only screen and (max-width: 1200px) {
+}
 
-    .navbar-header__logo {
-        flex-basis: 256px;
-    }
-
-    .navbar-header__search-bar {
-        background-size: 48px;
-        background-position: 24px;
-        padding-left: 88px;
-    }
+@media only screen and (max-width: 1024px) {
 
     .navbar-header__button {
         padding: 13px;
@@ -127,11 +119,6 @@
 
     .navbar-header__button-text {
         display: none;
-    }
-
-    .navbar-header__button-icon {
-        width: 40px;
-        height: 40px;
     }
     
     .navbar-bottom {
@@ -146,4 +133,8 @@
         position: absolute;
         display: none;
     }
+}
+
+@media only screen and (max-width: 414px) {
+    
 }

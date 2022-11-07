@@ -21,15 +21,21 @@
 
 collaboration__link {}
 
-@media screen and (max-width: 1700px) {
+@media only screen and (max-width: 1700px) {
     .collaboration__list {
         flex-wrap: wrap;
         justify-content: center;
     }
 }
 
-@media screen and (max-width: 1200px) {
+
+
+@media only screen and (max-width: 1024px) {
     .collaboration__item {
-        width: 100%;
+        align-items: center;
     }
+}
+
+@media only screen and (max-width: 414px) {
+    
 }

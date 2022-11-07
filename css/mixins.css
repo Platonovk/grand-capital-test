@@ -42,7 +42,7 @@
 }
 
 .field {
-    /* height: 100%; */
+    height: 100%;
 
     box-sizing: border-box;
 
@@ -69,12 +69,12 @@
 
     font-weight: var(--font-weight_medium);
     display: flex;
-    gap: 4px;
     padding: 4px 0px;
 
     white-space: nowrap;
     align-items: center;
     justify-content: flex-start;
+    flex-wrap: nowrap;
 }
 
 .link:visited {
@@ -91,7 +91,9 @@
 
 .link__body {}
 
-.link__decor {}
+.link__decor {
+    padding-left: 4px;
+}
 
 .section-header {
     margin-top: 0;
@@ -118,23 +120,16 @@
     margin: 0;
 }
 
-@media screen and (max-width: 1700px) {}
+@media only screen and (max-width: 1700px) {}
 
-@media screen and (max-width: 1200px) {
+
+
+@media only screen and (max-width: 1024px) {
     .link {
         white-space: normal;
     }
+}
 
-    .button--secondary {
-        padding: 18px 48px;
-    }
-
-    .button--white {
-        padding: 32px 64px;
-    }
-
-    .field {
-        padding: 32px;
-
-    }
+@media only screen and (max-width: 414px) {
+    
 }

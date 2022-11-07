@@ -44,6 +44,7 @@
     gap: 16px;
     flex-direction: column;
     align-items: flex-start;
+    width: 100%;
 }
 
 .team-member__avatar {
@@ -60,7 +61,7 @@
 }
 
 .team-member__occupation {
-    color: var(--grays_pale)
+    color: var(--grays_pale);
 }
 
 .member-contacts {
@@ -88,18 +89,16 @@
 }
 
 
-@media screen and (max-width: 1700px) {
+@media only screen and (max-width: 1700px) {
     .team__members {
         justify-content: center;
     }
 }
 
-@media screen and (max-width: 1200px) {
-    .team-member {
-        width: 70vw;
-    }
-    
-    .team-member__background {
-        width: 70vw;
-    }
+
+
+@media only screen and (max-width: 1024px) {
+}
+
+@media only screen and (max-width: 414px) {
 }
